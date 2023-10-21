@@ -9,9 +9,9 @@ services:
     restart: unless-stopped
     privileged: true
     network_mode: host
-  devices:
-    - /dev/ttyUSB0:/dev/ttyUSB0
-    - /dev/ttyACM0:/dev/ttyACM0
-  volumes:
-    homeassistant_config:
+devices:
+  - /dev/ttyUSB0:/dev/ttyUSB0
+  - /dev/ttyACM0:/dev/ttyACM0
+volumes:
+  homeassistant_config:
 
